@@ -1,7 +1,7 @@
 package es.fplumara.dam1.campeonato.service;
 
+import es.fplumara.dam1.campeonato.io.RegistroRankingCsv;
 import es.fplumara.dam1.campeonato.model.Deportista;
-import es.fplumara.dam1.campeonato.model.LineaRanking;
 import es.fplumara.dam1.campeonato.model.Resultado;
 
 import java.util.List;
@@ -12,7 +12,7 @@ public interface CampeonatoService {
 
 void registrarResultado(Resultado r);
 
-List<LineaRanking> ranking();
+List<RegistroRankingCsv> ranking();
 
 List<Resultado> resultadosDePais(String pais);
 

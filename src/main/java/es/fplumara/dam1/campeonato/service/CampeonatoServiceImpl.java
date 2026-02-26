@@ -3,8 +3,8 @@ package es.fplumara.dam1.campeonato.service;
 import es.fplumara.dam1.campeonato.exception.DuplicadoException;
 import es.fplumara.dam1.campeonato.exception.NoEncontradoException;
 import es.fplumara.dam1.campeonato.exception.OperacionNoPermitidaException;
+import es.fplumara.dam1.campeonato.io.RegistroRankingCsv;
 import es.fplumara.dam1.campeonato.model.Deportista;
-import es.fplumara.dam1.campeonato.model.LineaRanking;
 import es.fplumara.dam1.campeonato.model.Resultado;
 import es.fplumara.dam1.campeonato.repository.DeportistaRepository;
 import es.fplumara.dam1.campeonato.repository.ResultadoRepository;
@@ -72,7 +72,7 @@ resultadoRepository.save(r);
     }
 
     @Override
-    public List<LineaRanking> ranking() {
+    public List<RegistroRankingCsv> ranking() {
         return List.of();
     }
 

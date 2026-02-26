@@ -12,6 +12,10 @@ public class Deportista extends Participante{
         this.pais = pais;
     }
 
+    public Deportista() {
+
+    }
+
     @Override
     public String getPais() {
         return pais;
